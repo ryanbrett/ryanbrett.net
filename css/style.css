@@ -1,0 +1,493 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+}
+body {
+	background: #000000; 
+	font-weight: 400;
+	font-size: 13px;
+	text-align: left;
+	float:left;
+	font: 13px 'open sans', helvetica, arial;
+	width:100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font: italic 18px Georgia, seriff;
+	}
+
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+	list-style:none;
+}
+
+
+pre {
+white-space: pre-wrap; /* css-3 */
+white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+a:link {
+    text-decoration: none;
+	color:black;
+}
+a:visited {
+	color:black;
+	text-decoration:none;
+	}
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+} 
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+
+/* BG-HOLDER */
+
+#bg-holder {
+	float:left;
+	z-index: 1;	
+	min-width:961px;
+	max-width:1000px;
+	min-height:528px;
+	background-color: #42403d;
+	margin: 0 30px 30px 30px;
+	}
+
+/* NAV */
+
+nav {
+	float:left;
+	margin: 30px 30px 0 30px;
+	width:90%;
+	}
+.icons li {
+	list-style-type:none;
+	display:inline;
+	float:left;
+	margin:0;
+	padding:0;
+	height:50px;
+	}
+.sub-menu li {
+	height:auto;
+}
+.icons img {
+	width:50px;
+}	
+div#nav-icons {
+	float:left;
+	height:50px;
+	margin-left:30px;
+}
+#nav-icons li:hover {
+	z-index:100;
+	} 
+#nav-social-icons {
+	overflow: hidden;
+	float: left;
+	margin-right:30px;
+	}
+#nav-social-icons li:hover {
+	background:#000;
+	}
+
+#contact, #contact-drop {
+	background:rgb(183,106,89);
+	color:rgb(183,106,89);
+}
+#contact li a {
+	color:rgb(183,106,89);
+	}
+#contact li:hover {
+	color:rgb(224,130,109);
+	}
+#contact li {
+	width: 181px;
+}
+#docs, #docs-drop {
+	background:rgb(85,149,168);
+	color:rgb(85,149,168);
+}
+#docs li { 
+	width:240px; 
+	}
+#docs li a {
+	color:rgb(85,149,168);
+	}
+#docs li a:hover {
+	color:rgb(105,183,207);
+	}
+#about, #about-drop {
+	background:rgb(105,96,136);
+	color: rgb(105,96,136);
+}
+#about li {
+	width:190px;
+}
+#about li a{
+	color: rgb(105, 96, 136);
+}
+#about li:hover {
+	color: rgb(138, 126, 179);
+}
+#about a:hover {
+	color: rgb(138, 126, 179);
+}
+#about p:hover {
+	color: rgb(138, 126, 179);
+}
+#facebook, #facebook-drop {
+	background:#3C5A98;
+	color:#3C5A98;
+}
+#facebook li {
+	width:149px;
+}
+#facebook li a{
+	color:#3C5A98;
+}
+#facebook a:hover {
+    color:#3C5A98;
+}
+#facebook li:hover {
+	color:#7591C9
+}
+.fb_edge_widget_with_comment {
+	height:24px;
+	width:48px; 
+	overflow:hidden;
+}
+#twitter, #twitter-drop {
+	background:#33CCFF;
+	color:#33CCFF;
+}
+#twitter li {
+	width:199px;
+}
+#twitter li a{
+	color:#33CCFF;
+}
+#twitter a:hover {
+	color:#75DDFF;
+}
+#pinterest, #pinterest-drop {
+	background:#CA2027;
+	color:#CA2027;
+}
+#pinterest li {
+	width:199px;
+}
+#pinterest li a{
+	color:#CA2027;
+}
+#pinterest a:hover {
+	color:#E52836;
+}
+
+/* CONTENT  */
+
+#content {
+	position: relative;
+	padding: 30px;
+	float:left;
+}
+#content li {
+	display:inline;
+	}
+	 
+#imgcontainer {
+	width: auto;
+	float: left;
+	text-align: left;
+	display: block;
+	z-index: 0;
+	overflow: hidden;
+}
+	
+#loader {
+	color:whitesmoke;
+	display: block;
+/* 	width:489px;
+	height: 372px;
+	line-height:64px; */
+	font-size:83px;
+	padding: 111px 66px 0 66px;
+}
+#description {
+	text-align: left;
+	color: #7A7670;
+	padding:15px;
+	font-size:13px;	
+	background:#0A0A0A;
+	width:459px;
+}
+		
+/* CONTROLS */
+#controls {
+	float:left;
+	margin: 15px 0 0 30px;
+	border: 1px solid #333;
+	background-color: #444;
+}
+#controls img {
+	float:right;
+}
+#controls ul {
+	float:left;
+}
+
+#iconinfo {
+	position: relative; 
+	float: left;
+	cursor:pointer;
+	background: url(../images/icon-info.png);
+	display:block;
+	width: 50px;
+	height:50px;
+	overflow:hidden;
+}
+#iconinfo:hover {
+	background-position: bottom;
+	}
+#iiwrap {
+	height: auto;
+	float: left;
+	}
+#iiwrap li {
+	list-style-type:none;
+	display:inline;
+	float:left;
+	margin:0;
+	padding:0;
+}	
+#iiwrap li:hover {
+	background:#fff;
+}
+
+/* THUMBNAILS & Columns*/
+
+
+#tns {
+	margin-left:530px;
+}
+#tns li { 
+	list-style-type: none;
+	display: inline;
+	margin: 0 0 15px 15px;
+	height: 78px;
+	width: 78px;
+	overflow: hidden;
+	float: left;
+}
+#tns li.last {
+	margin:0 0 0 15px;
+	padding:0;
+}
+#column-wrap {
+	float: left;
+	min-width: 700px;
+	background: #111;
+	height: auto;
+	width: 100%;
+	padding: 30px 0;
+}
+
+#left-col {
+	float: left;
+	overflow: hidden;
+	width: auto;
+	margin: 0 15px 0 30px;
+}
+	
+/* FILTERS */
+#filters {
+	font: 20px 'open sans', helvetica, arial, sans-serif;
+	line-height: 22px;
+	float: left;
+	text-align: left;
+	width: 161px;
+	height: auto;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	margin-left: 30px;
+	}
+#filters a {
+	color:black;
+}	
+#filters p {
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0;
+}
+/* #photo {
+	float:left;
+	cursor:pointer;
+	display:block;
+	width:50px;
+	height:50px;
+	margin:0px;
+	padding:0px;
+	background:url(../images/icon-photo.png);
+	overflow: hidden;
+} */
+
+
+/* -:-:- COLORS -:-:- */
+/*beige*/
+a.color-1 {color:#c2715e;}
+a.color-1:hover {color:#e0917a;}
+a.color-1-bkgrnd {background:#c2715e;}
+/*blue*/
+a.color-2 {color:#5a9db1;}
+a.color-2:hover {color:#7abdd6;}
+a.color-2-bkgrnd {background:#5a9db1;}
+/*purple*/
+a.color-3 {color:#706690;}
+a.color-3:hover {color:#8a81af;}
+a.color-3-bkgrnd {background:#706690;}
+/*yellow*/
+a.color-4 {color:#c5b371;}
+a.color-4:hover {color:#e7d993;}
+a.color-4-bkgrnd {background:#c5b371;}
+/*green*/
+a.color-5 {color:#659b76;}
+a.color-5:hover {color:#86ba95;}
+a.color-5-bkgrnd {background:#659b76;}
+/*pink*/
+a.color-6 {color:#c0718f;}
+a.color-6:hover {color: #dd93b0;}
+a.color-6-bkgrnd {background:#c0718f;}
+
+
+/* -:-:-:- ABOUT PAGE -:-:-:- */
+
+#intro-container {
+	width: 599px;
+	float: left;
+	text-align: left;
+	font: 800 29px 'open sans', helvetica, arial black, arial, sans-serif; 
+	line-height: 35px;
+	}
+#intro-container img {
+	height:40px;
+	position:absolute;
+}
+img#arrow {
+height:26px;
+	top: 71px;
+	left: 390px;
+}
+img#text-icon-about {
+	top: 134px;
+	left: 407px;
+}
+img#text-icon-resume {
+	top: 170px;
+	left: 522px;
+}
+img#text-icon-contact {
+	top: 274px;
+	left: 511px;
+}
+
+/* -:-:-:- RESOURCES PAGE -:-:-:- */
+#resources-content {
+	width: 100%;
+	float: left;
+	text-align: left;
+	height: auto;
+}
+#resources-content div {
+	float:left;
+	height:auto;
+	width:200px;
+}
+#resources-content h1 {
+	font: 800 120px open sans, arial black, arial, sans-serif;
+	line-height:100px;
+	float:left;
+	margin:0;
+	margin-left:-9px;
+}
+#resources-content p {
+	float:left;
+}
+.resources-header img {
+	float:left;
+	margin-top: 20px;
+	margin-left: 7px;
+}
+.resources-header a {
+	width:70px;
+	height:67px;
+	display:block;
+	float: left;
+	margin-top: 20px;
+	margin-left: 7px;	
+}
+#resources-me {
+	color:#5f926f;
+	width:100%;
+}
+#resources-web {
+	color:#5595a8;
+	width:100%;
+}
+#resources-design {
+	color:#b76a59;
+	width:100%
+}
+#resources-me a {
+	background:url(../images/arrow-me.png) no-repeat;
+}
+#resources-web a {
+	background:url(../images/arrow-web.png) no-repeat;
+}
+#resources-design a {
+	background:url(../images/arrow-design.png) no-repeat;
+}
+#resources-me a:hover {
+	background-position:bottom;
+}
+#resources-web a:hover {
+	background-position:bottom;
+}
+#resources-design a:hover {
+	background-position:bottom;
+}
+
+/* -:-:- ROBOT -:-:- */
+#robot {
+	display:block;
+	width:60px;
+	height:70px;
+	background:url("../images/worriedrobot.png") 1px 0 no-repeat;
+	position:absolute;
+	top:0;
+	right:0;
+}
+#robot:hover {
+	background-position:bottom;
+}

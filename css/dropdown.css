@@ -1,0 +1,35 @@
+
+/* 
+	DROP DOWN MENU - LEVEL ONE
+*/
+ul.dropdown                         
+	{ position: relative; }
+ul.dropdown li a                    		
+	{ display: block; }
+ul.dropdown li.hover,
+ul.dropdown li:hover                	
+	{ color: #ad6b5b; position: relative; }
+
+
+
+/* 
+	DROP DOWN MENU - LEVEL TWO
+*/
+ul.dropdown ul  { 
+	z-index:100; 
+	width: auto; 
+	visibility: hidden; 
+	position: absolute; 
+	top: 100%; 
+	left: 0; 
+	height: auto; 
+	padding: 15px; 
+	}
+ul.dropdown ul li { 	
+		background-color: black;
+		font-size:20px;
+		line-height:23px;
+		padding: 15px; 
+		display:block;
+		margin-bottom: 15px;
+}
