@@ -10,7 +10,7 @@ $(document).ready(function(){
 		success: function(json) {
 			$.each(json, function(i, item) {
 				if(typeof item == 'object') {
-				newhtml += '
+				newhtml += '<div id="img-wrap">
 				}
 			}
 		}
