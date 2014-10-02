@@ -8,14 +8,14 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
 	background: #000000; 
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 100%;
 	text-align: left;
 	float:left;
-	font: 13px 'open sans', helvetica, arial;
+	font: 100% 'open sans', helvetica, arial;
 	width:100%;
 }
 h1, h2, h3, h4, h5, h6 {
-	font: italic 18px Georgia, seriff;
+	font: italic 1.5em Georgia, seriff;
 	}
 
 ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
@@ -232,14 +232,14 @@ div#nav-icons {
 /* 	width:489px;
 	height: 372px;
 	line-height:64px; */
-	font-size:83px;
+	font-size:3.458333em; /* 24/83 */
 	padding: 111px 66px 0 66px;
 }
 #description {
 	text-align: left;
 	color: #7A7670;
 	padding:15px;
-	font-size:13px;	
+	font-size:1em; /* 13 / 83 */	
 	background:#0A0A0A;
 	width:459px;
 }
