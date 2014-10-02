@@ -239,9 +239,12 @@ div#nav-icons {
 	text-align: left;
 	color: #7A7670;
 	padding:15px;
-	font-size:1em; /* 13 / 83 */	
+	/* font-size:1em;  13 / 83 */	
 	background:#0A0A0A;
 	width:459px;
+}
+#description p{
+	font-size: 0.8125em;
 }
 		
 /* CONTROLS */
