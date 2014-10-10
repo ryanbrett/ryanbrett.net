@@ -8,7 +8,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 body {
 	background: #000000; 
 	font-weight: 400;
-/* 	font-size: 100%; */
 	text-align: left;
 	float:left;
 	font: 100% 'open sans', helvetica, arial;
@@ -243,7 +242,7 @@ div#nav-icons {
 	width:459px;
 }
 #description p{
-	font-size: 0.8125em;
+	font-size: 0.8125em; /* 13/16 */
 }
 		
 /* CONTROLS */
@@ -339,6 +338,7 @@ div#nav-icons {
 	color:black;
 }	
 #filters p {
+	font-size: 12px;
 	font-size: 12px;
 	line-height: 16px;
 	letter-spacing: 0;
