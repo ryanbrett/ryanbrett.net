@@ -62,14 +62,20 @@ a:active {
     overflow: hidden;
 }
 
+/* CONTAINER*/
+
+#container {
+	width: 960px;
+}
+
 /* BG-HOLDER */
 
 #bg-holder {
 	float:left;
 	z-index: 1;	
-	min-width:961px;
+/* 	min-width:961px;
 	max-width:1000px;
-	min-height:528px;
+	min-height:528px; */
 	background-color: #42403d;
 	margin: 0 30px 30px 30px;
 	}
@@ -241,7 +247,7 @@ div#nav-icons {
 	background:#0A0A0A;
 	width:459px;
 }
-#description p{
+#description span{
 	font-size: 0.8125em; /* 13/16 */
 }
 		
