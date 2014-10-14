@@ -66,6 +66,9 @@ a:active {
 
 #container {
 	width: 960px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border box;
+	-box-sizing: border-box;	
 }
 
 /* BG-HOLDER */
@@ -325,7 +328,10 @@ div#nav-icons {
 	float: left;
 	overflow: hidden;
 	width: auto;
-	margin: 0 15px 0 30px;
+	margin: 0 1.5625%;
+}
+#right-col {
+	
 }
 	
 /* FILTERS */
