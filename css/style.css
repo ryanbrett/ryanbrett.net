@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding: 0;
 }
 body {
-	background: #000000; 
+	background: #ffffff; 
 	font-weight: 400;
 	text-align: left;
 	float:left;
@@ -68,19 +68,19 @@ a:active {
 	width: 960px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border box;
-	-box-sizing: border-box;	
+	-box-sizing: border-box;
+	margin: 0 auto;
 }
 
 /* BG-HOLDER */
 
 #bg-holder {
+	display: table-cell;
 	float:left;
 	z-index: 1;	
 /* 	min-width:961px;
 	max-width:1000px;
 	min-height:528px; */
-	background-color: #42403d;
-	margin: 0 30px 30px 30px;
 	}
 
 /* NAV */
@@ -102,16 +102,21 @@ nav {
 	height:auto;
 }
 .icons img {
+	float:left;
 	width:50px;
 }	
 div#nav-icons {
 	float:left;
 	height:50px;
-	margin-left:30px;
 }
 #nav-icons li:hover {
 	z-index:100;
 	} 
+#nav-icons span {
+	float: left;
+	font: italic bold 1.125em georgia,serif;
+	margin: 15px 15px 0 5px;
+}
 #nav-social-icons {
 	overflow: hidden;
 	float: left;
@@ -219,7 +224,6 @@ div#nav-icons {
 #content {
 	position: relative;
 	padding: 30px;
-	float:left;
 }
 #content li {
 	display:inline;
@@ -318,7 +322,6 @@ div#nav-icons {
 #column-wrap {
 	float: left;
 	min-width: 700px;
-	background: #111;
 	height: auto;
 	width: 100%;
 	padding: 30px 0;
@@ -328,7 +331,6 @@ div#nav-icons {
 	float: left;
 	overflow: hidden;
 	width: auto;
-	margin: 0 1.5625%;
 }
 #right-col {
 	
