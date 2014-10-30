@@ -1,21 +1,10 @@
 $(document).ready(function(){
 
-$('#description').slideToggle(false);
-
 $('#tns a').click(function(e) {
 	var url = $(this).attr('href') + '#imginfo';
 	$('#imgcontainer').html('<h3 id="loader">loading...</h3>').load(url);
 	e.preventDefault();
-})
-
-
-
-
-$('#iconinfo').live('click', function(){
-		$('#description').slideToggle('slow', 'swing', function() {
-		});
-}); 
-	
+})	
 
 /* 	$('.resources-header').click(function() {
 		$(this).next().toggle('slow');
