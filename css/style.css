@@ -6,7 +6,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding: 0;
 }
 body {
-	background: #ffffff; 
+	background: url(../images/bkgrnd-pattern2.png) repeat #dedede; 
 	font-weight: 400;
 	text-align: left;
 	float:left;
@@ -223,7 +223,7 @@ div#nav-icons {
 
 #content {
 	position: relative;
-	padding: 30px;
+	padding: 15px 30px;
 }
 #content li {
 	display:inline;
@@ -303,28 +303,27 @@ div#nav-icons {
 /* THUMBNAILS & Columns*/
 
 
-#tns {
-	margin-left:530px;
+ul#tns {
+	margin-bottom:15px
 }
 #tns li { 
 	list-style-type: none;
 	display: inline;
-	margin: 0 0 15px 15px;
-	height: 78px;
-	width: 78px;
+	margin: 0 15px 15px 0;
+	height: 33px;
+	width: 33px;
 	overflow: hidden;
 	float: left;
 }
-#tns li.last {
+/* #tns li.last {
 	margin:0 0 0 15px;
 	padding:0;
-}
+} */
 #column-wrap {
 	float: left;
 	min-width: 700px;
 	height: auto;
 	width: 100%;
-	padding: 30px 0;
 }
 
 #left-col {
@@ -333,7 +332,7 @@ div#nav-icons {
 	width: auto;
 }
 #right-col {
-	
+	display: table-cell;
 }
 	
 /* FILTERS */
