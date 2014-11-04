@@ -229,18 +229,19 @@ div#nav-icons {
 	display:inline;
 	}
 	 
-#imgcontainer {
+.imgcontainer {
 	background: url("../images/bkgrnd-trans-white.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-	width: 30%;
+	width: 25%;
 	border: 1px solid darkgray;
 	padding: 5px;
 	float: left;
 	text-align: left;
-	display: block;
+	display: table-cell;
 	z-index: 0;
 	overflow: hidden;
+	margin: 0 15px 15px 0;
 }
-#img-wrap img {
+.img-wrap img {
 	width: 100%;
 }
 	
@@ -253,17 +254,20 @@ div#nav-icons {
 	font-size:3.458333em; /* 24/83 */
 	padding: 111px 66px 0 66px;
 }
-#description {
-	text-align: left;
-	padding:5px;
+.description {
+    padding: 10px 15px;
+    text-align: left;
 }
-#description h3 {
-	font-size: 1em;
+.description h3 {
+    border-bottom: 1px solid darkgray;
+    font-size: 1em;
+    margin-bottom: 3px;
+    padding-bottom: 5px;
 }
-#description p {
+.description p {
 	font-size: 0.8125em;
 }
-#description span{
+.description span{
 	font-size: 0.8125em; /* 13/16 */
 }
 		
