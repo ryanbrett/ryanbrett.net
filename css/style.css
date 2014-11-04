@@ -231,7 +231,6 @@ div#nav-icons {
 	 
 .imgcontainer {
 	background: url("../images/bkgrnd-trans-white.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-	width: 25%;
 	border: 1px solid darkgray;
 	padding: 5px;
 	float: left;
@@ -339,9 +338,10 @@ ul#tns {
 	width: 100%;
 }
 
-#left-col {
-	overflow: hidden;
-	width: 100%;
+.column {
+	float: left;
+	width: 30%;
+	display: table-cell;
 }
 #right-col {
 	display: table-cell;
