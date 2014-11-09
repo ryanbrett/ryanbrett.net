@@ -4,22 +4,21 @@
 
 <head>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" http-equiv="Content-Type" content="text/html, width=device-width, charset=utf-8" />
 	<title>Home | Ryan McCullough Designer Developer</title>
 
-		<link rel="icon" type="image/gif" href="../images/favicon.gif" />
+		<link rel="icon" type="image/gif" href="images/favicon.gif" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css' />
-<!-- 		<link href='http://fonts.googleapis.com/css?family=Kameron' rel='stylesheet' type='text/css'>
- -->		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
 		<link rel="stylesheet" type="text/css" href="../css/dropdown.css" media="screen, projection"/>
-		<!--[if lte IE 7]>
+		<!--[if (lte IE8) & (!IEMobile)]>
 		<link rel="stylesheet" type="text/css" href="css/ie.css" media="screen" />
 		<![endif]-->
 
 		<script type="text/javascript" src="../js/jquery171.min.js"></script>  
 		<script type="text/javascript" language="javascript" src="../js/jquery.dropdownPlain.js"></script>
 		<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="../js/my-script.js"></script>  
 <!--GOOGLEAnalytics-->
 		<script type="text/javascript">
@@ -32,11 +31,13 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
 		</script>
-		
+<!-- /GOOGLEAnalytics -->	
 </head>
 
 <body>
-<!-- facebook crap -->
+
+<!-- FACEBOOK LIKE BUTTON crap -->
+<!--
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -45,145 +46,46 @@
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<!-- /facebook crap -->
-	<nav>	
-	<!-- :: ICONS NAVIGATION ::-->
-		<div id="nav-icons">		
-			<ul class="dropdown icons">
-				<li id="logo">
-					<a href="http://www.ryandesigndevelop.com" title="home">
-					<img class="icons" src="../images/logo.png" alt="Logo"/>
-					</a>
-				</li>							
-				<li class="color-1 color-1-bkgrnd" id="contact">
-					<a href="#">
-					<img class="icons" src="../images/icon-contact2.png" alt="contact" />
-					</a>
-						<ul id="contact-drop"  class="sub-menu">
-							<li><p>ryan@ryanbrett.net</p></li> 
-							<li style="margin:0;"><p>(331) 222 RYAN</p></li>
-						</ul>
-				</li>	
-				<li class="color-2 color-2-bkgrnd" id="docs">
-					<a href="#">
-					<img class="icons" src="../images/icon-resume2.png" alt="Docs"/>
-					</a>
-						<ul id="docs-drop" class="sub-menu">							
-							<li style="margin:0;" class="">
-								<a href="http://www.ryanbrett.net/docs/resume-web.pdf" target="_blank">
-								<p>Download Resume PDF</p>
-								</a>
-							</li>
-	<!-- 					<li style="padding-top:0;"><a href="http://www.ryandesigndevelop.com/resume.html"><p style="margin:0;">View Resume Below</p></a></li>
-	 -->				</ul>
-				</li>
-				<li class="color-3 color-3-bkgrnd" id="about">
-					<a href="#">
-					<img class="icons" src="../images/icon-about2.png">
-					</a>
-						<ul id="about-drop" class="sub-menu" style="background-color: rgb(105, 96, 136);">
-							<li><a href="#"><p>Me</p></a></li> 
-							<li><a href="#"><p>Design</p></a></li>
-							<li style="margin:0;"><a href="#"><p>Development</p></a></li>
-						</ul>
-				</li>				
-	<!-- :: ICONS SOCIAL ::-->	
-				<li id="facebook">
-					<a href="#" title="facebook" target="_blank">
-					<img class="icons" src="../images/icon-facebook2.png" />
-					</a>							
-						<ul id="facebook-drop" class="sub-menu">
-							<li>							
-								<div class="fb-like" data-href="http://www.ryanbrett.net" data-send="false" data-width="150" data-show-faces="false" data-font="lucida grande"></div>
-								ryanbrett.net
-							</li>
-							<li style="margin-bottom:0;"><a href="#">send a message</a></li>						
-						</ul>
-				</li>
-				<li id="twitter">
-					<a href="https://twitter.com/#!/RyanDesDev" title="twitter" target="_blank">
-					<img class="icons" src="../images/icon-twitter2.png">
-					</a>
-						<ul id="twitter-drop" class="sub-menu">
-							<li>
-								<a href="https://twitter.com/ryanbrettnet" target="_blank" class="twitter-follow-button" data-show-count="false" data-size="large">follow @ryanbrettnet</a>
-<!-- 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
- -->						</li>
-							<li>
-								<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ryanbrett.net" data-text="Hot new designer/developer in town." data-via="ryanbrettnet" data-hashtags="designer">Tweet</a>
-<!-- 								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
- -->							</li>							
-							<li style="margin:0">
-								<a href="#" c>load twitter widget</a>
-							</li>						
-						</ul>
-				</li>
-				<li id="pinterest">
-					<a href="#" title="pinterest" target="_blank">
-					<img class="icons" src="../images/icon-pinterest.png" />
-					</a>							
-						<ul id="pinterest-drop" class="sub-menu">
-							<li><a href="http://pinterest.com/ryanbrett/" title="pinterest" target="_blank">follow me</a></li>
-							<li><a href="http://pinterest.com/ryanbrett/food/" title="pinterest" target="_blank">view food board</a></li>						
-							<li style="margin-bottom:0;"><a href="http://pinterest.com/ryanbrett/design/" title="pinterest" target="_blank">view design board</a></li>						
-						</ul>
-				</li>
-			</ul>
-		</div>	
-	<!-- :: ICONS SOCIAL ::-->	
-		<div id="nav-social-icons">
-			<ul class="icons">
-				<li id="tumblr"><a href="http://ryandesigndevelop.tumblr.com/" title="tumblr" target="_blank"><img id="icon3" class="icons" src="../images/icon-tumblr.png"></a></li>
-				<li id="google"><a href="https://plus.google.com/104450623132074233067/posts" title="Google+" target="_blank"><img id="icon4" class="icons" src="../images/icon-google.png"></a></li>
-			</ul>
-		</div>
-		<img style="height:50px; float:right" src="../images/logo-ryanbrett.png" />
-	</nav>
+-->
+<!-- /FACEBOOK LIKE BUTTON crap -->
 
+<div id="container">
+	<span class="separator"></span>
 <div id="bg-holder">
 	<div id="content">
-		<div id="left-col" style="width:100%;">
-			<div class="float-center" id="imgcontainer">
-				<div class="float-center-2" id="imginfo">
-					<div class="float-center-3" id="img-wrap" style="background:#42403D; border:1px solid #222222; padding:15px; width:560px;">
-						<iframe width="560" height="315" src="http://www.youtube.com/embed/59PBvkmHWts" frameborder="0" allowfullscreen></iframe>
+	<div id="column-wrap">
+			<div class="imgcontainer" id="android">
+				<div class="imginfo">
+					<div class="img-wrap">		
+						<div class="float-center-3" id="img-wrap">
+							<iframe width="100%" height="400" src="http://www.youtube.com/embed/59PBvkmHWts" frameborder="0" allowfullscreen></iframe>
+						</div>					
 					</div>
-					<div id="info-wrap">
-						<div id="description">
-							<h3>Android Application by Ryan McCullough</h3>
-							<p>This application was created to represent a Chipotle restaurant, and is coded so as to easily adapt to any individual restaurant. </p>
-						</div>
-					</div>
+					<div class="description">
+						<h3>Android App by Me</h3>
+						<p>This application was created to represent a Chipotle restaurant, and is coded so as to easily adapt to any individual restaurant. </p>				</div>
+				</div>	
+			</div>
+	</div> <!-- END Column Wrap -->
+<!-- 	<div id="controls" class="icons">
+		<ul>
+			<li>
+				<div id="iiwrap">
+				<p id="iconinfo" title="info"></p>	
 				</div>
-			</div>	
-
-			<div id="controls" class="icons">
-				<ul>
-					<li>
-						<div id="iiwrap">
-						<p id="iconinfo" title="info"></p>	
-						</div>
-					</li>
-<!-- 					<li>
-						<a id="photo" href="#">
-						<img src="../images/icon-photo.png" />
-						</a>	
-					</li> -->
-					<li>
-						<a id="btn-next" href="#">
-							<img src="../images/arrow-plus.png" />
-						</a>
-					</li>
-				</ul>
-			</div>				
-		</div> <!-- END #left-col -->
-	</div>
+			</li>
+			<li>
+				<a id="photo" href="#">
+				<img src="images/icon-photo.png" />
+				</a>	
+			</li> 
+		</ul>
+	</div> -->
+	
+</div>
 </div> 
-<footer>
-<a href="index.html">home</a>
-</footer>
-	<a id="robot" href="#"></a>
+</div>
+<a id="robot" href="#"></a>
 </body>
 
 </html>
-

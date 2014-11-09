@@ -139,6 +139,9 @@ div#nav-icons {
 #contact li {
 	width: 181px;
 }
+#contact a:hover {
+    color: rgb(224, 130, 109);
+}
 #docs, #docs-drop {
 	background:rgb(85,149,168);
 	color:rgb(85,149,168);
@@ -149,7 +152,7 @@ div#nav-icons {
 #docs li a {
 	color:rgb(85,149,168);
 	}
-#docs li a:hover {
+#docs a:hover {
 	color:rgb(105,183,207);
 	}
 #about, #about-drop {
@@ -223,7 +226,7 @@ div#nav-icons {
 
 #content {
 	position: relative;
-	padding: 15px 30px;
+	padding: 30px;
 }
 #content li {
 	display:inline;
@@ -517,4 +520,9 @@ img#text-icon-contact {
 }
 #robot:hover {
 	background-position:bottom;
+}
+
+/* -:-:- SEPARATOR -:-:- */
+.separator {
+	border: 1px dotted darkgray;
 }
