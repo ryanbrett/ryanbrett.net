@@ -64,41 +64,30 @@ a:active {
 /* CONTAINER*/
 
 #container {
-	width: 95%;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border box;
 	-box-sizing: border-box;
 	margin: 0 auto;
+	padding: 7.5%;
+	width: 95%;
 }
 
 /* BG-HOLDER */
 
-#bg-holder {
-	z-index: 1;	
-/* 	min-width:961px;
-	max-width:1000px;
-	min-height:528px; */
-	}
-
 /* NAV */
 
 nav {
-	margin: 30px 30px 0 30px;
-	width:95%;
-	min-width: 670px;
 	}
 .icons li {
 	list-style-type:none;
-	display:inline;
 	margin:0;
 	padding:0;
-	height:50px;
 	}
 .sub-menu li {
 	height:auto;
 }
 .icons img {
-	width:50px;
+	height: 35px;
 }	
 div#nav-icons {
 }
@@ -211,12 +200,14 @@ div#nav-icons {
 #pinterest a:hover {
 	color:#E52836;
 }
+#google {
+	background: #D53D30;
+}
 
 /* CONTENT  */
 
 #content {
 	position: relative;
-	padding: 30px;
 }
 #content li {
 	display:inline;
@@ -229,7 +220,7 @@ div#nav-icons {
 	text-align: left;
 	z-index: 0;
 	overflow: hidden;
-	margin: 0 1.5625% 1.5625% 0;
+	margin: 0 0 1.5625%;
 }
 .img-wrap img {
 	width: 100%;
