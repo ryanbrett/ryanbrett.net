@@ -85,14 +85,7 @@ nav {
 	margin:0;
 	padding:0;
 	}
-@media all and (min-width: 600px) {
-	.icons li {
-	list-style-type:none;
-	margin:0;
-	padding:0;	
-		float:left;
-	}
-}
+
 .sub-menu li {
 	height:auto;
 }
@@ -498,4 +491,22 @@ img#text-icon-contact {
 /* -:-:- SEPARATOR -:-:- */
 .separator {
 	border: 1px dotted darkgray;
+}
+
+@media all and (min-width: 600px) {
+	nav {
+		display: table-cell;
+	}
+	.icons li {
+		list-style-type:none;
+		margin:0;
+		padding:0;	
+		float:left;
+	}
+	#nav-icons span {
+		float: left;
+		font: italic bold 1.125em georgia,serif;
+		margin: 12px 7px 0 0;
+		text-align: center;
+	}
 }
