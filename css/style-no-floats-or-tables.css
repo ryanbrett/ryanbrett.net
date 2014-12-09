@@ -10,7 +10,6 @@ body {
 	font-weight: 400;
 	text-align: left;
 	font: 100% 'open sans', helvetica, arial;
-	width:100%;
 }
 h1, h2, h3, h4, h5, h6 {
 	font: italic 1.125em Georgia, seriff;
@@ -69,7 +68,6 @@ a:active {
 	-box-sizing: border-box;
 	margin: 0 auto;
 	padding: 7.5%;
-	width: 95%;
 }
 
 /* BG-HOLDER */
