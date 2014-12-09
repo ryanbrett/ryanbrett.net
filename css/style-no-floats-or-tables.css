@@ -316,13 +316,9 @@ ul#tns {
 	padding:0;
 } */
 #column-wrap {
-	min-width: 700px;
 	height: auto;
-	width: 100%;
 }
-
 .column {
-	width: 24%;
 }
 #right-col {
 }
