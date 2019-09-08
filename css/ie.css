@@ -1,1 +1,4 @@
 ul.dropdown ul li					{ display: inline; width: 100%; } 
+
+#left-col {	float:left; width: 47.65625%; }
+#right-col {	float:right; width: 47.65625%; }

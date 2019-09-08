@@ -6,16 +6,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding: 0;
 }
 body {
-	background: #000000; 
+	background: url(../images/bkgrnd-pattern2.png) repeat #dedede; 
 	font-weight: 400;
-	font-size: 13px;
 	text-align: left;
 	float:left;
-	font: 13px 'open sans', helvetica, arial;
+	font: 100% 'open sans', helvetica, arial;
 	width:100%;
 }
 h1, h2, h3, h4, h5, h6 {
-	font: italic 18px Georgia, seriff;
+	font: italic 1.125em Georgia, seriff;
 	}
 
 ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
@@ -63,16 +62,25 @@ a:active {
     overflow: hidden;
 }
 
+/* CONTAINER*/
+
+#container {
+	width: 95%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border box;
+	-box-sizing: border-box;
+	margin: 0 auto;
+}
+
 /* BG-HOLDER */
 
 #bg-holder {
+	display: table-cell;
 	float:left;
 	z-index: 1;	
-	min-width:961px;
+/* 	min-width:961px;
 	max-width:1000px;
-	min-height:528px;
-	background-color: #42403d;
-	margin: 0 30px 30px 30px;
+	min-height:528px; */
 	}
 
 /* NAV */
@@ -80,7 +88,7 @@ a:active {
 nav {
 	float:left;
 	margin: 30px 30px 0 30px;
-	width:90%;
+	width:95%;
 	}
 .icons li {
 	list-style-type:none;
@@ -94,23 +102,27 @@ nav {
 	height:auto;
 }
 .icons img {
+	float:left;
 	width:50px;
 }	
 div#nav-icons {
 	float:left;
 	height:50px;
-	margin-left:30px;
 }
 #nav-icons li:hover {
 	z-index:100;
 	} 
+#nav-icons span {
+	float: left;
+	font: italic bold 1.125em georgia,serif;
+	margin: 15px 15px 0 5px;
+}
 #nav-social-icons {
 	overflow: hidden;
 	float: left;
 	margin-right:30px;
 	}
 #nav-social-icons li:hover {
-	background:#000;
 	}
 
 #contact, #contact-drop {
@@ -126,6 +138,9 @@ div#nav-icons {
 #contact li {
 	width: 181px;
 }
+#contact a:hover {
+    color: rgb(224, 130, 109);
+}
 #docs, #docs-drop {
 	background:rgb(85,149,168);
 	color:rgb(85,149,168);
@@ -136,7 +151,7 @@ div#nav-icons {
 #docs li a {
 	color:rgb(85,149,168);
 	}
-#docs li a:hover {
+#docs a:hover {
 	color:rgb(105,183,207);
 	}
 #about, #about-drop {
@@ -211,19 +226,24 @@ div#nav-icons {
 #content {
 	position: relative;
 	padding: 30px;
-	float:left;
 }
 #content li {
 	display:inline;
 	}
 	 
-#imgcontainer {
-	width: auto;
+.imgcontainer {
+	background: url("../images/bkgrnd-trans-white.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 1px solid darkgray;
+	padding: 5px;
 	float: left;
 	text-align: left;
-	display: block;
+	display: table-cell;
 	z-index: 0;
 	overflow: hidden;
+	margin: 0 1.5625% 1.5625% 0;
+}
+.img-wrap img {
+	width: 100%;
 }
 	
 #loader {
@@ -232,16 +252,24 @@ div#nav-icons {
 /* 	width:489px;
 	height: 372px;
 	line-height:64px; */
-	font-size:83px;
+	font-size:3.458333em; /* 24/83 */
 	padding: 111px 66px 0 66px;
 }
-#description {
-	text-align: left;
-	color: #7A7670;
-	padding:15px;
-	font-size:13px;	
-	background:#0A0A0A;
-	width:459px;
+.description {
+    padding: 10px 15px;
+    text-align: left;
+}
+.description h3 {
+    border-bottom: 1px solid darkgray;
+    font-size: 1em;
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+}
+.description p {
+	font-size: 0.8125em;
+}
+.description span{
+	font-size: 0.8125em; /* 13/16 */
 }
 		
 /* CONTROLS */
@@ -289,36 +317,36 @@ div#nav-icons {
 /* THUMBNAILS & Columns*/
 
 
-#tns {
-	margin-left:530px;
+ul#tns {
+	margin-bottom:15px
 }
 #tns li { 
 	list-style-type: none;
 	display: inline;
-	margin: 0 0 15px 15px;
-	height: 78px;
-	width: 78px;
+	margin: 0 15px 15px 0;
+	height: 33px;
+	width: 33px;
 	overflow: hidden;
 	float: left;
 }
-#tns li.last {
+/* #tns li.last {
 	margin:0 0 0 15px;
 	padding:0;
-}
+} */
 #column-wrap {
 	float: left;
 	min-width: 700px;
-	background: #111;
 	height: auto;
 	width: 100%;
-	padding: 30px 0;
 }
 
-#left-col {
+.column {
 	float: left;
-	overflow: hidden;
-	width: auto;
-	margin: 0 15px 0 30px;
+	width: 24%;
+	display: table-cell;
+}
+#right-col {
+	display: table-cell;
 }
 	
 /* FILTERS */
@@ -337,6 +365,7 @@ div#nav-icons {
 	color:black;
 }	
 #filters p {
+	font-size: 12px;
 	font-size: 12px;
 	line-height: 16px;
 	letter-spacing: 0;
@@ -478,16 +507,29 @@ img#text-icon-contact {
 	background-position:bottom;
 }
 
-/* -:-:- ROBOT -:-:- */
+/* -:-:- LOGO & ROBOT -:-:- */
+#logo {
+    display: block;
+    position: fixed;
+    right: 50px;
+    top: -5px;
+	z-index: -1;
+}
 #robot {
 	display:block;
 	width:60px;
 	height:70px;
-	background:url("../images/worriedrobot.png") 1px 0 no-repeat;
-	position:absolute;
+	background:url("../images/worriedrobot.png") no-repeat scroll 1px 0 rgba(0, 0, 0, 0);
+	position:fixed;
 	top:0;
 	right:0;
+	z-index: -1;
 }
 #robot:hover {
 	background-position:bottom;
+}
+
+/* -:-:- SEPARATOR -:-:- */
+.separator {
+	border: 1px dotted darkgray;
 }
